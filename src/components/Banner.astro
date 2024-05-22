@@ -1,32 +1,32 @@
 ---
 import { BsGithub } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa6";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { SlSocialLinkedin } from "react-icons/sl";
-
-
 ---
 
-<div class="flex items-center max-w-6xl mx-auto f mt-20 gap-10 h-auto  ">
+<div class="flex flex-col md:flex-row items-center max-w-6xl mx-auto gap-10 pt-24 md:pt-40 p-5">
     <div class="flex flex-col gap-3">
-        <a href="https://github.com/felipogit"><BsGithub color="pink" size={30} /></a>
-        <a href="https://www.linkedin.com/in/felipe-costa/"><SlSocialLinkedin color="pink" size={30} /></a>
+        <a href="https://github.com/felipogit" target="_blank" rel="noopener noreferrer">
+            <BsGithub color="pink" size={30} />
+        </a>
+        <a href="https://www.linkedin.com/in/felipe-costa/" target="_blank" rel="noopener noreferrer">
+            <SlSocialLinkedin color="pink" size={30} />
+        </a>
         <!-- <a href=""><FaInstagram color="pink" size={30} /></a> -->
-
     </div>
-    <div class="flex flex-col justify-center gap-10">
-        <h1 class="text-5xl ">Olá meu nome é Felipe</h1>
-        <p class="text-xl font-medium ">
+    <div class="flex flex-col justify-center gap-5 md:gap-10">
+        <h1 class="text-3xl md:text-5xl">Olá, meu nome é Felipe</h1>
+        <p class="text-lg md:text-xl font-medium">
             Sou um desenvolvedor Full Stack apaixonado por transformar ideias em
             realidade digital. Com uma combinação de experiência adquirida
             através de estudos e projetos freelance, tenho habilidades sólidas
             tanto no desenvolvimento front end quanto no back end.
         </p>
-        <button class="w-40 h-10 flex  justify-center bg-pink-500 text-white gap-2 items-center text-xl  "> Contato <IoArrowForwardCircle color="white" size={20} />
+        <button class="w-32 md:w-40 h-10 flex justify-center bg-pink-500 text-white gap-2 items-center text-base md:text-xl">
+            Contato <IoArrowForwardCircle color="white" size={20} />
         </button>
     </div>
-   
     <div>
-        <img class="rounded-full " src="/public/felipe.png" alt="">
+        <img class="rounded-full" src="/public/felipe.png" alt="Foto de Felipe" />
     </div>
 </div>

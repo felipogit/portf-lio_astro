@@ -2,12 +2,14 @@
 import { BsGithub } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
 
-
 ---
 
-
-<div class="w-full flex items-center justify-center bg-pink-500 text-white dark:bg-zinc-800 dark:text-white h-20 gap-5 mt-20">
-    <h2 class="text-xl">Desenvolvido por Felipe</h2>
-    <a href="https://www.linkedin.com/in/felipe-costa/" class=" flex items-center gap-3 text-xl">Linkedin <SlSocialLinkedin color="pink" size={30} /> </a> 
-    <a href="https://github.com/felipogit" class=" flex items-center gap-3 text-xl">Github <BsGithub color="pink" size={30} /> </a>
+<div class="w-full flex flex-col sm:flex-row items-center justify-center bg-pink-500 text-white dark:bg-zinc-800 dark:text-white h-auto sm:h-20 gap-2 sm:gap-5 mt-20 p-4 sm:p-0">
+    <h2 class="text-lg sm:text-xl">Desenvolvido por Felipe</h2>
+    <a href="https://www.linkedin.com/in/felipe-costa/" target="_blank" class="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl">
+        Linkedin <SlSocialLinkedin color="pink" size={24} className="sm:size={30}" />
+    </a>
+    <a href="https://github.com/felipogit" target="_blank" class="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl">
+        Github <BsGithub color="pink" size={24} className="sm:size={30}" />
+    </a>
 </div>
