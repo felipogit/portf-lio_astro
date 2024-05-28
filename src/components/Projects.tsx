@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Modal } from "./Modal";
 
+import bartolomeuImg from "/public/bartolomeu.png";
+import ecommerceImg from "/public/ecommerce.png";
+import burgerShopImg from "/public/burger-shop.png";
+import checkoutImg from "/public/checkout.png";
+import fashionstoreImg from "/public/fashionstore.png";
+
 interface Project {
     name: string;
     description: string;
@@ -23,7 +29,7 @@ export const Projects = () => {
         um botão que dispara um alerta para que o cliente possa entrar em contato com o advogado. Menu responsivo para que o cliente
         possa acessar as páginas de qualquer tela. Site mostrado no google com técnicas de SEO. Nesse trabalho eu utilizei React,
         Typescript, Styled Components, react-router-dom, react-icons, react-helmet-async e react-scroll. `,
-            link: "https://www.bartolomeulima.com.br/",
+            link: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/bartolomeu_tgx1se.png",
             img: "public/bartolomeu.png",
         },
         {
@@ -34,7 +40,7 @@ export const Projects = () => {
         de pesquisa, tudo que entra no carrido é somado e subtraido do valor total. A aplicação foi desenvolvida
         com JavaScript, HTML e CSS.`,
             link: "https://ecommerce-roan-kappa.vercel.app/",
-            img: "public/ecommerce.png",
+            img: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/ecommerce_oy3qyb.png",
         },
 
         {
@@ -46,7 +52,7 @@ export const Projects = () => {
         for adicionado no carrinho.
         A aplicação foi feita com React, TypeScript, Styled Components e React-Toastify.`,
             link: "https://hamburger-shop-coral.vercel.app/",
-            img: "public/burger-shop.png",
+            img: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/burger_shop_jzawe7.png",
         },
 
         {
@@ -58,7 +64,7 @@ export const Projects = () => {
         Figma para criar o layout da aplicação, React, Styled Components, 
         TypeScript e Zod para validação dos dados.`,
             link: "https://front-end-checkout.vercel.app/",
-            img: "public/checkout.png",
+            img: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920853/checkout_n2ngxg.png",
         },
         {
             name: "Fashion Store",
@@ -68,7 +74,7 @@ export const Projects = () => {
         com metodologia ágil como o Scrum, também aprendemos a trabalhar com gitflow para organizar nosso projeto. Utilizamaos React, Styled Components e TypeScript, 
         Zode, React-Toastify e React-Hooks-Form para validação dos dados.`,
             link: "https://fashion-online-store-group2.vercel.app/",
-            img: "public/fashionstore.png",
+            img: "https://res-console.cloudinary.com/dsq93mfak/media_explorer_thumbnails/73f905ed5800132680864bc8ac1d60db/detailed",
         },
     ];
 
@@ -87,7 +93,7 @@ export const Projects = () => {
                         <li key={project.name} className="flex flex-col gap-3">
                             <a
                                 href="#"
-                                onClick={() => openModal(project)} // Chama a função openModal ao clicar
+                                onClick={() => openModal(project)} 
                                 className="text-xl font-medium flex flex-col gap-3 hover:scale-110 duration-300"
                             >
                                 <h2>{project.name}</h2>
@@ -102,7 +108,7 @@ export const Projects = () => {
                 </ul>
             </div>
 
-            {/* Renderiza o Modal e passa as informações do projeto selecionado */}
+            
             <Modal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
                 {selectedProject && (
                     <>
