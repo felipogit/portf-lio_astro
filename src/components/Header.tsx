@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  MdOutlineDarkMode,
-  MdOutlineLightMode,
-  MdMenu,
-  MdClose,
-} from "react-icons/md";
+import { MdOutlineDarkMode, MdOutlineLightMode, MdMenu, MdClose, } from "react-icons/md";
 
 import clsx from "clsx";
 
