@@ -29,8 +29,8 @@ export const Projects = () => {
         um botão que dispara um alerta para que o cliente possa entrar em contato com o advogado. Menu responsivo para que o cliente
         possa acessar as páginas de qualquer tela. Site mostrado no google com técnicas de SEO. Nesse trabalho eu utilizei React,
         Typescript, Styled Components, react-router-dom, react-icons, react-helmet-async e react-scroll. `,
-            link: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/bartolomeu_tgx1se.png",
-            img: "public/bartolomeu.png",
+            link: "https://www.bartolomeulima.com.br",
+            img: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/bartolomeu_tgx1se.png",
         },
         {
             name: "E-commerce Weartake",
