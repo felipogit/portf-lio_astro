@@ -10,7 +10,7 @@ const Menus = [
   },
   {
     label: "Sobre",
-    path: "/sobre",
+    path: "#sobre",
   },
   {
     label: "Projetos",
@@ -49,7 +49,7 @@ export const Header = () => {
             {Menus.map((menu) => (
               <a href={menu.path}>
                 <li
-                  className="w-full text-xl cursor-pointer p-4 md:p-0 md:mx-auto hover:bg-pink-600"
+                  className="w-full text-xl cursor-pointer p-4 md:p-0 md:mx-auto hover:bg-pink-600 dark:hover:bg-black"
                   key={menu.label}
                 >
                   {menu.label}

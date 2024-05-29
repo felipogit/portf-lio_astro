@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { Modal } from "./Modal";
 
-import bartolomeuImg from "/public/bartolomeu.png";
-import ecommerceImg from "/public/ecommerce.png";
-import burgerShopImg from "/public/burger-shop.png";
-import checkoutImg from "/public/checkout.png";
-import fashionstoreImg from "/public/fashionstore.png";
-
 interface Project {
     name: string;
     description: string;
@@ -88,12 +82,12 @@ export const Projects = () => {
         <div className="flex flex-col items-center max-w-8xl mx-auto mt-20 gap-5 px-4">
             <h2 className="text-5xl">Projetos</h2>
             <div>
-                <ul className="flex flex-wrap justify-center gap-20 w-full mt-10 ">
+                <ul className="flex flex-wrap justify-center gap-20 w-full mt-10">
                     {projects.map((project) => (
                         <li key={project.name} className="flex flex-col gap-3">
                             <a
                                 href="#"
-                                onClick={() => openModal(project)} 
+                                onClick={() => openModal(project)}
                                 className="text-xl font-medium flex flex-col gap-3 hover:scale-110 duration-300"
                             >
                                 <h2>{project.name}</h2>
@@ -108,39 +102,41 @@ export const Projects = () => {
                 </ul>
             </div>
 
-            
             <Modal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
                 {selectedProject && (
                     <>
-                        <div className="lg:flex justify-between gap-5 ">
+                        <div className="lg:flex justify-between gap-5">
                             <div>
                                 <img className="w-[50rem]" src={selectedProject.img} alt={selectedProject.name} />
                             </div>
                             <div className="lg:flex flex-col w-full max-w-[40rem]">
                                 <h2 className="text-2xl font-bold">{selectedProject.name}</h2>
                                 <p className="mt-4">{selectedProject.description}</p>
-                            <button
-                                onClick={() => setIsModalOpen(false)} 
-                                className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
-                            >
-                                Fechar
-                            </button>
+                                <button
+                                    onClick={() => setIsModalOpen(false)}
+                                    className="mt-4 bg-red-500 text-white px-4 py-2 rounded 
+                                    w-full sm:w-auto hover:bg-pink-600 dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+                                >
+                                    Fechar
+                                </button>
                             </div>
-
                         </div>
-                        <div className="flex items-center gap-5 ">
-                            <a className="mt-4 bg-red-500 text-white px-4 py-2 rounded" href={selectedProject.link} target="_blank">
+                        <div className="flex flex-col sm:flex-row items-center sm:gap-5 w-full">
+                            <a className="mt-4 bg-red-500 text-white px-4 py-2 rounded w-full sm:w-auto text-center hover:bg-pink-600
+                            dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+                                href={selectedProject.link} target="_blank">
                                 Acessar projeto
                             </a>
-                            <a className="mt-4 bg-red-500 text-white px-4 py-2 rounded" href="">
+                            <a className="mt-4 bg-red-500 text-white px-4 py-2 rounded w-full sm:w-auto text-center hover:bg-pink-600
+                            dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white" href="">
                                 Acessar repositório
                             </a>
-
                         </div>
                     </>
                 )}
             </Modal>
         </div>
     );
+
 
 }
