@@ -41,6 +41,7 @@ export const Projects = () => {
                         link={selectedProject.link}
                         img={selectedProject.img}
                         isModal={true}
+                        repository={selectedProject.repository}
                     />
                 )}
             </Modal>
