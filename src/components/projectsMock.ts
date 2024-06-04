@@ -66,7 +66,7 @@ export const projects: Project[] = [
     com metodologia ágil como o Scrum, também aprendemos a trabalhar com gitflow para organizar nosso projeto. Utilizamaos React, Styled Components e TypeScript, 
     Zode, React-Toastify e React-Hooks-Form para validação dos dados.`,
         link: "https://fashion-online-store-group2.vercel.app/",
-        img: "https://res-console.cloudinary.com/dsq93mfak/media_explorer_thumbnails/73f905ed5800132680864bc8ac1d60db/detailed",
+        img: "https://res.cloudinary.com/dsq93mfak/image/upload/v1716920854/fashionstore_dsxwui.png",
         repository: "https://github.com/felipogit/FashionStore",
     },
     {
